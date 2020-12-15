@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 04</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        body{
+            background-color: black;
+        }
+        div {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div ul{ 
+            display: flex;
+            border-bottom: 5px solid whitesmoke;
+            
+        }
+        div ul li{
+            width: 50px; height: 50px;
+            background-color: black;
+            list-style-type: none;
+            margin:  0 10px;
+            border-radius: 50%;
+            animation: bouncy 1s  linear infinite ;
+        }
+        @keyframes bouncy{
+            0%{ transform: translateY(0);}
+            50%{ transform: translateY(-150px);}
+            100%{ transform: translateY(0);}
+        }
+        ul li:nth-child(1){
+            animation-delay: 0.2s;
+            background-color: red;
+        }
+        ul li:nth-child(2){
+            animation-delay: 0.4s;
+            background-color: brown;
+        }
+        ul li:nth-child(3){
+            animation-delay: 0.2s;
+            background-color: green;
+        }
+        ul li:nth-child(4){
+            animation-delay: 0.4s;
+            background-color: yellow;
+        }
+        ul li:nth-child(5){
+            animation-delay: 0.2s;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+    </div>
+</body>
+</html>
